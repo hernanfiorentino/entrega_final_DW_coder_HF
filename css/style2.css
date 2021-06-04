@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400;1,700&family=Nunito&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: lato,sans-serif; }
+
+.top {
+  width: 100%;
+  height: 19px;
+  background-color: #1792ce; }
+
+.logo {
+  display: inline-block; }
+
+.logo img {
+  width: 350px; }
+
+/* slider */
+.slider {
+  width: 100%;
+  height: 500px;
+  background-image: url(img/slider1.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+.modales {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.gradient {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(90deg, rgba(23, 146, 206, 0.5) 0%, rgba(172, 202, 228, 0) 100%); }
+
+.gradient2 {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, rgba(23, 146, 206, 0.5) 0%, rgba(172, 202, 228, 0) 100%); }
+
+.sliderb {
+  width: 100%;
+  height: 160px;
+  background-size: cover; }
+
+.contenido_principal {
+  width: 75%;
+  margin: auto;
+  padding-top: 25px;
+  margin-bottom: 30PX; }
+
+h1 {
+  color: #1d1d1d;
+  font-size: 25pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px; }
+
+h2 {
+  color: #14648c;
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 18pt; }
+
+h4 {
+  color: #fff;
+  font-size: 30pt;
+  padding-top: 50px; }
+
+h5 {
+  color: #000;
+  font-size: 24pt;
+  padding-top: 30px; }
+
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #3d3d3d; }
+
+.item1 {
+  color: #79b47d; }
+
+table {
+  width: 100%;
+  border: 1px solid;
+  border-color: #d1d1d1;
+  padding: 20px 10px 20px 10px; }
+
+th {
+  color: #34abc6; }
+
+.section_contacto {
+  width: 100%; }
+
+.formulario {
+  width: 45%;
+  margin-left: 20px;
+  display: inline-block; }
+
+form {
+  color: #14648c; }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #15648b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+.mapa {
+  width: 45%;
+  display: inline-block; }
+  .mapa iframe {
+    margin-top: 0px;
+    margin-left: 50px;
+    padding-top: 50px; }
+
+.listado_flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.bloque__producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bloque__manual {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bloque__producto:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bloque__manual:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bloque__producto img {
+  transition: 0.2s;
+  width: 300px; }
+
+.bloque__manual img {
+  transition: 0.2s;
+  width: 150px; }
+
+.bloque__producto img:hover {
+  transform: scale(1.1, 1.1); }
+
+.bloque__manual img:hover {
+  transform: scale(1.1, 1.1); }
+
+.bloque__producto2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bloque__producto2:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(10px, 10px); }
+
+.nombre__producto {
+  color: #79b47d;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/* GRID */
+.grid-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-areas: 'title title title' 'manuala manualb manualc' 'manuald manuale manualf' 'manualg manualh manuali ' 'title_tutoriales title_tutoriales title_tutoriales' 'videotutoriales videotutoriales videotutoriales';
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.title {
+  grid-area: title; }
+
+.manuala {
+  grid-area: manuala;
+  text-align: center;
+  padding-top: 10px; }
+
+.manualb {
+  grid-area: manualb;
+  text-align: center;
+  padding-top: 10px; }
+
+.manualc {
+  grid-area: manualc;
+  text-align: center;
+  padding-top: 10px; }
+
+.manuald {
+  grid-area: manuald;
+  text-align: center;
+  padding-top: 10px; }
+
+.manuale {
+  grid-area: manuale;
+  text-align: center;
+  padding-top: 10px; }
+
+.manualf {
+  grid-area: manualf;
+  text-align: center;
+  padding-top: 10px; }
+
+.manualg {
+  grid-area: manualg;
+  text-align: center;
+  padding-top: 10px; }
+
+.manualh {
+  grid-area: manualh;
+  text-align: center;
+  padding-top: 10px; }
+
+.manuali {
+  grid-area: manuali;
+  text-align: center;
+  padding-top: 10px; }
+
+.title_turoriales {
+  grid-area: title_tutoriales; }
+
+.videotutoriales {
+  grid-area: videotutoriales; }
+
+.video {
+  margin: auto !important;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.img_manual {
+  padding: 20px;
+  width: 75%;
+  border-radius: 30px; }
+
+.button_manual {
+  background-color: #adcbe5;
+  border: none;
+  color: #4b6d88;
+  padding: 9px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 5px; }
+
+.bs_mainproducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.bs_mainservices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Nunito", sans-serif; }
+
+.bs_nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; }
+
+.wap {
+  z-index: 100;
+  position: fixed;
+  bottom: 30px;
+  left: 5px; }
+
+.wap img {
+  width: 80px; }
+
+/* Aqui comienza el footer */
+footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  background-color: #26272b;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px; }
+
+footer p {
+  color: #bfbfbf !important; }
+
+footer h6 {
+  color: #fff;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 3px; }
+
+.footer_bajo {
+  width: 70%;
+  margin: auto;
+  padding-top: 25px;
+  margin-bottom: 30PX; }
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem; }
+  .bloque__producto img {
+    transition: 0.2s;
+    width: 100px; }
+  .bloque__manual img {
+    transition: 0.2s;
+    width: 80px; }
+  .button_manual {
+    background-color: #adcbe5;
+    border: none;
+    color: #4b6d88;
+    padding: 9px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 5px; } }
